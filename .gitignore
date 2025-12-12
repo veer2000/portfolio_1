@@ -1,0 +1,27 @@
+# Node
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.ruff_cache/
+
+# Env & local
+.env
+.env.*
+*.sqlite3
+portfolio.db
+
+# OS/Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
