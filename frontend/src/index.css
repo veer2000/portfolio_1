@@ -1,0 +1,78 @@
+/* Reset default browser spacing */
+
+:root {
+  --bg-main: #0a0a0a;
+  --bg-section: #0f0f0f;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --accent: #4ade80; /* soft green */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Full page background */
+body{
+  background-color: 	#000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+p {
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+section,
+footer {
+  scroll-margin-top: 80px;
+}
+/* App container styling */
+.app-container {
+  min-height: 100vh;
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not(.company-card):hover {
+  text-decoration: underline;
+}
+

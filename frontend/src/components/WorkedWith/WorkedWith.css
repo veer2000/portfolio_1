@@ -1,0 +1,55 @@
+.worked-with {
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.worked-with-container {
+  max-width: 1000px;
+  width: 100%;
+}
+
+
+/* Company list layout */
+.company-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.company-card {
+  display: inline-block;        /* 🔥 REQUIRED for <a> */
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color: var(--bg-section);
+  color: var(--text-secondary);
+  font-size: 14px;
+  text-decoration: none;        /* 🔥 KILL underline */
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Normalize link states */
+.company-card:visited,
+.company-card:focus,
+.company-card:active {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+
+/* Hover ALWAYS wins */
+.company-card:hover {
+  color: var(--text-primary);
+  background-color: #151515;
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 8px 24px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,60 @@
+
+
+.about {
+  width: 100%;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-main);
+}
+
+section {
+  padding: 100px 0;
+}
+
+.about-container {
+  max-width: 720px;
+}
+
+
+.about-container h2 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.about-container p {
+  margin-bottom: 24px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.about-points {
+  list-style: none;   /* 🔴 THIS removes default bullets */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 32px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+.about-points li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.about-points li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+
+@media (max-width: 600px) {
+  .about-points {
+    grid-template-columns: 1fr;
+  }
+}
