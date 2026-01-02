@@ -7,8 +7,8 @@ function Landing() {
   return (
     <section className="landing">
       <div className="landing-container">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Backend Engineer · API Specialist · Problem Solver</p>
+        <h1>Welcome Guy's</h1>
+        <p>Associate Backend Developer </p>
 
         <button onClick={() => navigate('/home')}>
           Enter Portfolio

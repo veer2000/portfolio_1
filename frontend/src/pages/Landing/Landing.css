@@ -8,3 +8,37 @@
 .landing-container {
   text-align: center;
 }
+
+.landing-container h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.landing-container p {
+  color: var(--text-secondary);
+  margin-bottom: 32px; /* 👈 breathing space */
+  font-size: 16px;
+}
+
+/* Button styling */
+.landing-container button {
+  background-color: var(--accent);
+  color: #052e16;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding: 14px 36px;   /* 👈 bigger button */
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+  transition: 
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Hover effect (same language as Hero button) */
+.landing-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(74, 222, 128, 0.3);
+}
