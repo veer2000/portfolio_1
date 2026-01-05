@@ -53,3 +53,15 @@
     0 0 0 1px rgba(255, 255, 255, 0.06),
     0 8px 24px rgba(0, 0, 0, 0.4);
 }
+
+@media (max-width: 768px) {
+  .company-list {
+    justify-content: center;   /* center wrapped rows */
+    gap: 16px;                 /* slightly tighter spacing */
+  }
+
+  .company-card {
+    font-size: 13px;           /* subtle mobile text scale */
+    padding: 10px 16px;        /* better touch balance */
+  }
+}

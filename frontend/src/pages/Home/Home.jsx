@@ -13,6 +13,9 @@ function Home(){
             <About />
             <Projects />
             <Footer />
+        {/*Sentinel for Contact section */}
+        <div id="contact-sentinel" style={{ height: "1px" }} />
+        {/* <div style={{ height: "60vh" }} /> */}
         </div>
     )
 }

@@ -7,10 +7,6 @@
   justify-content: center;
   background-color: var(--bg-main);
 }
-/* 
-section {
-  padding: 100px 0;
-} */
 
 .about-container {
   max-width: 720px;
@@ -129,14 +125,21 @@ section {
   margin-top: 12px;
 }
 
+@media (max-width: 768px) {
+  .about {
+    padding: 64px 0;          /* reduce vertical space */
+  }
 
-/* .modal-points {
-  list-style: none;
-  padding: 0;
-  margin: 12px 0;
+  .about-container {
+    padding: 0 16px;          /* breathing room on sides */
+  }
+
+  .about-skills {
+    padding: 8px 12px;        /* better swipe comfort */
+    justify-content: flex-start; /* natural scroll start */
+  }
+
+  .modal-content {
+    padding: 24px;            /* better fit on small screens */
+  }
 }
-
-.modal-points li {
-  margin-bottom: 8px;
-  color: var(--text-primary);
-} */

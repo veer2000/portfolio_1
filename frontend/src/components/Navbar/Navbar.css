@@ -67,3 +67,22 @@
   color: white;
   border-bottom: 2px solid #3b82f6;
 }
+
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 56px;                 /* better touch target */
+  }
+
+  .navbar-inner {
+    padding: 0 16px;              /* reduce inner spacing */
+  }
+
+  .nav-links {
+    gap: 20px;                    /* reduce gap */
+  }
+
+  .nav-links li {
+    font-size: 13px;              /* slightly smaller text */
+  }
+}

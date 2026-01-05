@@ -77,3 +77,22 @@
   height: 100%;
   object-fit: cover;  /* 🔥 key property */
 }
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .hero-left button {
+    margin: 0 auto;          /* center button */
+    display: block;
+  }
+
+  .hero-left h1,
+  .hero-left h2,
+  .hero-left p {
+    background-color: transparent; /* reduce visual weight */
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

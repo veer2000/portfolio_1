@@ -16,9 +16,21 @@
   flex-wrap: wrap;
 }
 
-/* .footer-links a:visited,
-.footer-links a:focus,
-.footer-links a:active {
-  text-decoration: none;
-  color: var(--text-secondary);
-} */
+@media (max-width: 768px) {
+  .footer {
+    padding: 56px 0;
+  }
+
+  .footer-container {
+    padding: 0 16px;          /* prevent edge touch */
+  }
+
+  .footer-links {
+    gap: 16px;
+  }
+
+  .footer-links a {
+    padding: 8px 12px;        /* better tap area */
+    border-radius: 6px;
+  }
+}

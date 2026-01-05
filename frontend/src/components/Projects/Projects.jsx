@@ -9,14 +9,14 @@ function Projects() {
 
         <div className="projects-grid">
           <ProjectCard
-            title="Library Management API"
-            description="REST API to manage books, users, and transactions."
-            tech="Python, FastAPI, PostgreSQL"
+            title="Slack Integration using Slack SDK"
+            description="REST API to create chat, messaging."
+            tech="Python, FastAPI, Slack SDK"
           />
 
           <ProjectCard
-            title="Cash Flow Analyzer"
-            description="Weekly and monthly cash flow tracking system."
+            title="Slack Weboohk Integration"
+            description="using slack events API to post messages to channels."
             tech="Python, SQL"
           />
 
@@ -25,6 +25,19 @@ function Projects() {
             description="Custom AI agent using LLM APIs and memory."
             tech="FastAPI, Mistral, LangChain"
           />
+
+          <ProjectCard
+            title="Portfolio Website"
+            description="Personal portfolio website to showcase projects and skills."
+            tech="React, CSS, JavaScript"
+          />
+
+          <ProjectCard
+            title="Generative ai chatbot"
+            description="Using Mistral api key integrated chatbot."
+            tech="FastAPI, Mistral, JavaScript"
+          />
+
         </div>
       </div>
     </section>
