@@ -17,8 +17,15 @@ function Projects() {
           <ProjectCard
             title="Slack Weboohk Integration"
             description="using slack events API to post messages to channels."
-            tech="Python, SQL"
+            tech="Python, SQL, FastAPI, Slack Events API"
           />
+
+          <ProjectCard
+            title="Microsioft Teams Integation in Python application"
+            description="Create teams, channels and post messages using Microsoft Graph API."
+            tech="FastAPI, Microsoft Graph API, OAuth2, Python"
+          />
+
 
           <ProjectCard
             title="AI Agent Prototype"
