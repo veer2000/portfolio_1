@@ -16,6 +16,17 @@
   flex-wrap: wrap;
 }
 
+.footer-email {
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+}
+
+.footer-location {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
 @media (max-width: 768px) {
   .footer {
     padding: 56px 0;

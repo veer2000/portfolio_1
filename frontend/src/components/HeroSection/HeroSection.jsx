@@ -13,7 +13,9 @@ function HeroSection() {
           <p>
             I build scalable backend systems and APIs using Python and FastAPI and Integrate AI to.
           </p>
-          <button>Get Started</button>
+          <a href="#projects" className="hero-cta">
+            Get Started
+          </a>
         </div>
 
         {/* Right visual */}
