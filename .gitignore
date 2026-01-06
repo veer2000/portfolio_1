@@ -5,6 +5,10 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
 
 # ========================
 # Virtual Environments
@@ -49,3 +53,14 @@ Thumbs.db
 node_modules/
 dist/
 build/
+frontend/.vite/
+frontend/dist/
+
+
+.dockerignore
+docker-compose.override.yml
+
+
+#uvicorn reuntime files
+*.pid
+*.sock

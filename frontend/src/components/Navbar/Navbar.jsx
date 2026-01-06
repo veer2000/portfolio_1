@@ -1,9 +1,10 @@
 import "./Navbar.css";
 import { useEffect, useState } from "react";
+import InquiryModal from "../InquiryModal/InquiryModal";
 
 function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
 useEffect(() => {
   const sections = [
     "home",
@@ -41,6 +42,7 @@ useEffect(() => {
 }, []);
 
   return (
+    <>
     <header className="navbar">
       <div className="navbar-inner">
         <ul className="nav-links">
@@ -75,6 +77,10 @@ useEffect(() => {
             <a
               href="#contact"
               className={activeSection === "contact" ? "active" : ""}
+              onClick={(e) => {
+                e.preventDefault();
+                setIsModalOpen(true);
+              }}
             >
               Contact
             </a>
@@ -113,6 +119,11 @@ useEffect(() => {
         </div>
       </div>
     </header>
+        <InquiryModal
+      isOpen={isModalOpen}
+      onClose={() => setIsModalOpen(false)}
+    />
+  </>
   );
 }
 

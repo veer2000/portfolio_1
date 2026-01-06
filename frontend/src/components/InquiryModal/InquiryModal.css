@@ -1,0 +1,137 @@
+/* Overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+}
+
+/* Modal box */
+.modal-content {
+  width: 420px;
+  max-width: 92vw;
+  background-color: #0f0f0f;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.05),
+    0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Title */
+.modal-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Form layout */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Name + Email row */
+.modal-row {
+  display: flex;
+  gap: 12px;
+}
+
+/* Inputs */
+.modal-form input,
+.modal-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background-color: #141414;
+  border: 1px solid #222;
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+.modal-form input::placeholder,
+.modal-form textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* Focus */
+.modal-form input:focus,
+.modal-form textarea:focus {
+  border-color: var(--accent);
+}
+
+/* Actions */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* Buttons */
+.modal-actions button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+.modal-actions .primary {
+  background-color: var(--accent);
+  color: #052e16;
+  font-weight: 600;
+}
+
+.modal-actions .secondary {
+  background-color: #1a1a1a;
+  color: #d1d5db;
+}
+
+/* Hover */
+.modal-actions button:hover {
+  transform: translateY(-1px);
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .modal-row {
+    flex-direction: column;
+  }
+}
+/* Contact tabs */
+.contact-tabs {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: #141414;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.contact-tab {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 6px;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Active tab */
+.contact-tab.active {
+  background-color: var(--bg-section);
+  color: var(--text-primary);
+}
+
+/* Hover */
+.contact-tab:hover {
+  color: var(--text-primary);
+}

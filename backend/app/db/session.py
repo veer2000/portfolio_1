@@ -1,10 +1,10 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from .base import Base
-from .models import User
+from app.db.base import Base
+from app.db.models import User
 
 
-DATABASE_URL =  "sqlite:///./portfolio.db"
+DATABASE_URL =  "sqlite:////app/data/portfolio.db"
 
 engine = create_engine(DATABASE_URL, connect_args={'check_same_thread': False})
 
@@ -17,5 +17,3 @@ def get_db():
     finally :
         db.close()
 
-def init_db():
-    Base.metadata.create_all(bind=engine)

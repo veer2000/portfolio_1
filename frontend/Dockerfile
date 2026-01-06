@@ -14,6 +14,13 @@ COPY . .
 # Build the app
 RUN npm run build
 
+# Copy env before build
+COPY .env .env
+
+# Copy rest of the source
+COPY . .
+
+RUN npm run build
 
 # ---------- Stage 2: Serve ----------
 FROM nginx:alpine
