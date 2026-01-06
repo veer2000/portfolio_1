@@ -18,8 +18,8 @@ COPY app ./app
 # Create db directory
 RUN mkdir -p /app/data
 
-# Copy initial db (optional)
-COPY portfolio.db /app/data/portfolio.db
+# Copy initial db (optional) use only for local testing
+# COPY portfolio.db /app/data/portfolio.db
 
 # ---------- Expose backend port ----------
 EXPOSE 8000
