@@ -6,11 +6,15 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.routers.inquiery import router as inquiry_router
 
+from dotenv import load_dotenv
+load_dotenv()
+
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
+        "http://34.195.34.207:3000",
         "http://localhost:3000",
         "http://localhost",
     ],
