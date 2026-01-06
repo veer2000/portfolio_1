@@ -15,7 +15,7 @@ COPY . .
 RUN npm run build
 
 # Copy env before build
-COPY .env .env
+#COPY .env .env
 
 # Copy rest of the source
 COPY . .
