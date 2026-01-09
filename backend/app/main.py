@@ -15,6 +15,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://34.195.34.207:3000",
+        "https://your-netlify-site.netlify.app"
         "http://localhost:3000",
         "http://localhost",
     ],
