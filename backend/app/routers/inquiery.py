@@ -5,7 +5,7 @@ from sqlalchemy.orm import Session
 from app.db.session import get_db
 from app.db import models
 from app.schemas.inquiry import InquiryCreate, InquiryResponse
-from app.services.sns_service import send_admin_notification
+# from app.services.sns_service import send_admin_notification
 
 router = APIRouter(prefix="/inquiries", tags=["inquiries"])
 
