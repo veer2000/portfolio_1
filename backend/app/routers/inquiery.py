@@ -29,14 +29,14 @@ def create_inquiry_endpoint(payload: InquiryCreate, db: Session = Depends(get_db
         db.refresh(inquiry)
 
         # ✅ SNS trigger AFTER successful DB commit
-        admin_message = (
-            f"New Inquiry Received\n\n"
-            f"Name: {payload.name}\n"
-            f"Email: {payload.email}\n"
-            f"Message: {payload.message}"
-        )
+        # admin_message = (
+        #     f"New Inquiry Received\n\n"
+        #     f"Name: {payload.name}\n"
+        #     f"Email: {payload.email}\n"
+        #     f"Message: {payload.message}"
+        # )
 
-        send_admin_notification(admin_message)
+        # send_admin_notification(admin_message)
 
         return {
             "message": "Inquiry created successfully",
